@@ -3,9 +3,9 @@ document.getElementById('copy').addEventListener('click', copy)
 document.getElementById('clickpw').addEventListener('click', generate_pwd)
 
 function generate_pwd(event) {
-    const length = 15,
+    const length = 32,
         charset = 
-        'aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ123456789'
+        'aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ123456789!?.'
         var pwd = ''
         for (var i = 0, n = charset.length; i < length; ++i) {
             pwd += charset.charAt(Math.floor(Math.random() * n))
